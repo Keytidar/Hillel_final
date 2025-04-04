@@ -1,19 +1,25 @@
+@import "../scss/colors.scss";
+
+@import "../scss/fonts.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 0px;
-  font-family: "Montserrat", sans-serif;
+  border: 0;
+  font-family: $font_family_primary, sans-serif;
 }
 
+
+
 body {
-  background-color: rgb(50, 50, 100);
+  background-color: $blue_regular;
 }
 
 .languages_header {
   display: flex;
   padding: 10px 15px;
-  background-color: rgba(245, 245, 250, 0.2);
+  background-color: rgba($grey_bg, 0.2);
 }
 
 .language_button_block {
@@ -22,12 +28,11 @@ body {
 
 .language_button {
   padding: 5px 7px;
-  color: white;
   background-color: rgba(255, 255, 255, 0);
 }
 
 .language_button.active {
-  background-color: rgb(240, 20, 90);
+  background-color: $accent_red;
   border-radius: 8px;
 }
 
@@ -40,4 +45,4 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}/*# sourceMappingURL=style.css.map */
+  }

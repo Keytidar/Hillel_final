@@ -1,0 +1,11 @@
+//Hero
+
+@mixin hero_regular() {
+  font-family: $font-family-primary;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin hero_alt() {
