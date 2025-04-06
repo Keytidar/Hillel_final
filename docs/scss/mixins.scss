@@ -8,4 +8,42 @@
   line-height: normal;
 }
 
-@mixin hero_alt() {
+@mixin hero_mobile() {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin h2_mobile() {
+  font-family: $font-family-primary;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  }
+
+@mixin margin_mobile_horizontal {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+@mixin margin_mobile_vertical {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@mixin h3_caps {
+  font-family: $font-family-primary;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  }
+
+@mixin center-flex{
+  display: flex;
+  align-items: center;
+}
