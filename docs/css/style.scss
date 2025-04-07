@@ -217,6 +217,10 @@ body {
   @include hero_mobile;
 }
 
+.hero_mobile.quote {
+  margin-bottom: 30px;
+}
+
 .quote_block {
   padding: 30px;
 }
@@ -229,3 +233,55 @@ body {
   margin-top: 5px;
   margin-bottom: 30px;
 }
+
+.menu_dots {
+  @include center_x;
+  gap: 15px;
+  margin-bottom: 60px;;
+}
+
+.dot_svg.active svg{
+  opacity: 1 !important;
+}
+
+.trust {
+  @include margin_mobile_vertical;
+  @include center_x;
+  color: $blue_regular;
+}
+
+.sponsor_block_container {
+  margin-bottom: 30px;;
+}
+
+.sponsor_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 7.5rem;
+}
+
+// sponsor colors section
+
+.hillel_color {
+  background-color: #1C4280;
+}
+
+.wannabiz_color {
+  background-color: #143646;
+}
+
+.orange_color {
+  background-color: #F48B30;
+}
+
+.a3dlook_color {
+  background-color: #9E4DC3;
+}
+
+.adtelligent_color {
+  background-color: #E2E2E4;
+}
+
+
+// sponsor colors section end

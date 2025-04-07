@@ -48,6 +48,11 @@
   align-items: center;
 }
 
+@mixin center_x {
+  display: flex;
+  justify-content: center;
+}
+
 @mixin h3_regular {
   font-size: 22px;
   font-style: normal;
