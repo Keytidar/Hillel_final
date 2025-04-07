@@ -14,9 +14,14 @@
 
 
 
-body {
-  background-color: $blue_regular;
+body {  
   background: url;
+}
+
+.blue_bg {
+  background-color: $blue_regular;
+  padding-bottom: 60px;
+  border-radius: 0px 0px 12px 12px;
 }
 
 .languages_header {
@@ -129,6 +134,12 @@ body {
   color: $basic_white;
 }
 
+.h2_mobile.border {
+  border-top: 4px solid grey;
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
 .paragraph_introduction {
   @include margin_mobile_horizontal;
   @include margin_mobile_vertical;
@@ -164,4 +175,57 @@ body {
   padding: 14px;
   background-color: $basic_white;
   border-radius: 24px;
+}
+
+.h3_regular {
+  @include h3_regular;
+}
+
+.p_regular {
+  @include p_regular;
+  @include margin_mobile_horizontal;
+  margin-bottom: 30px;
+}
+
+.layered_block_2 {
+  padding-bottom: 10px;
+  margin: 0 20px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #CACADB;
+}
+
+.layered_block_3 {
+  padding-bottom: 10px;
+  margin: 0 40px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #E7E7F2;
+}
+
+
+.glasses_guy {
+  max-width: 100%;
+  background-size: cover;
+}
+
+.h3_caps {
+  @include h3_caps;
+  @include center-flex;
+  color: $light_blue_regular;
+}
+
+.hero_mobile {
+  @include hero_mobile;
+}
+
+.quote_block {
+  padding: 30px;
+}
+
+.quote_block img {
+  padding-bottom: 30px;;
+}
+
+.hero_regular.quote {
+  margin-top: 5px;
+  margin-bottom: 30px;
 }

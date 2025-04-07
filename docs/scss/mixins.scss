@@ -47,3 +47,23 @@
   display: flex;
   align-items: center;
 }
+
+@mixin h3_regular {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: $light_blue_regular;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+@mixin p_regular {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  color: $basic_white;
+}
