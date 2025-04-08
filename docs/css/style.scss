@@ -262,7 +262,11 @@ body {
 .menu_dots {
   @include center_x;
   gap: 15px;
-  margin-bottom: 60px;;
+  margin-bottom: 60px;
+}
+
+.dot_svg {
+  background-color: transparent;
 }
 
 .dot_svg.active svg{

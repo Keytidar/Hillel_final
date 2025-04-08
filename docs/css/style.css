@@ -311,6 +311,10 @@ body {
   margin-bottom: 60px;
 }
 
+.dot_svg {
+  background-color: transparent;
+}
+
 .dot_svg.active svg {
   opacity: 1 !important;
 }
