@@ -12,10 +12,31 @@
   font-family: $font_family_primary, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: $light_blue_regular;
+  cursor: pointer;
+  border-bottom: transparent 1px solid;;
+}
+
+a:hover {
+  border-bottom: 1px solid $light_blue_regular;
+}
 
 
 body {  
   background: url;
+}
+
+.logo_wrapper {
+  background-image: url(../images/svg/symbol_h.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .blue_bg {
@@ -99,6 +120,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 10rem;
+  padding-bottom: 30px;;
 }
 
 .button_scroll button {
@@ -125,6 +147,9 @@ body {
 }
 
 .scroll_item.active {
+  background: $gradient_red_text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .h2_mobile {
@@ -285,3 +310,93 @@ body {
 
 
 // sponsor colors section end
+
+.publications {
+  @include margin_mobile_vertical;
+  @include margin_mobile_horizontal;
+}
+
+.publications h3 {
+  margin-bottom: 5px;
+}
+
+.publications img {
+  @include margin_mobile_vertical;
+  border-radius: 8px 8px 0px 0px;
+  width: 100%;
+  height: auto;
+  
+}
+
+.h4_regular {
+  @include h4_regular;
+  color: $light_blue_regular; 
+}
+
+.publication_date {
+  color: $grey_text;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.publication_text_card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @include margin_mobile_horizontal;
+}
+
+.publication_text {
+  padding-top: 15px;
+  border-top: 4px solid $grey_separator;;
+
+}
+
+.p_small {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+footer {
+  @include margin_mobile_vertical;
+  @include margin_mobile_horizontal;
+}
+
+.footer_cube {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 30px;;
+  border-top: 2px solid $grey_separator;
+}
+
+.footer_cube svg {
+  margin-top: 21px;
+}
+
+.footer_cube p {
+  margin-top: 30px;
+}
+
+.footer_phone_number {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: $blue_regular;
+}
+
+.grey_text {
+  color: $grey_text;
+}
+
+.blue_text {
+  color: $blue_regular;
+}

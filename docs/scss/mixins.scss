@@ -13,6 +13,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  background: $gradient_red_text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @mixin h2_mobile() {
@@ -72,3 +75,11 @@
   line-height: 26px; /* 162.5% */
   color: $basic_white;
 }
+
+@mixin h4_regular {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
