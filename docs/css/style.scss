@@ -243,6 +243,7 @@ body {
 
 .quote_block {
   padding: 30px;
+  background-color: $grey_bg;
 }
 
 .quote_block img {
@@ -258,6 +259,7 @@ body {
   @include center_x;
   gap: 15px;
   margin-bottom: 60px;
+  margin-top: $tablet-margin_2;
 }
 
 .dot_svg {
@@ -306,7 +308,29 @@ body {
 .adtelligent_color {
   background-color: #E2E2E4;
 }
+.clickky_color {
+  background-color: #C71C36; // Corrected color for Clickky
+}
 
+.eco_leasing_color {
+  background-color: #E0F7FA;
+}
+
+.infratek_color {
+  background-color: #FBE9E7;
+}
+
+.city_park_color {
+  background-color: #282240; // Corrected color for City Park
+}
+
+.art_print_studio_color {
+  background-color: #1D4568; // Corrected color for Art Print Studio
+}
+
+.ultimate_card_color {
+  background-color: #000000;
+}
 
 // sponsor colors section end
 
@@ -398,18 +422,56 @@ footer {
   color: $blue_regular;
 }
 
+.margin_container {
+  @include margin_mobile_horizontal;
+}
+
+// Media Queries
+
+// Mobile
+@media (max-width: 767px) {
+  .sponsor_block:nth-child(n+7) {
+    display: none;
+  }
+}
+// Tablet
+
 @media (min-width: 601px) and (max-width: 1024px) {
   .services_container {
     display: flex;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
+    gap: $tablet-margin;
+  }
+
+  .blue_bg {
+    padding-bottom: $tablet-margin;
+  }
+  .margin_container {
+    @include margin_tablet_horizontal;
   }
 
   .services_element {
     min-width: none;
     max-width: 18rem;
   }
-}
 
-.margin_container {
-  @include margin_mobile_horizontal;
+  .quote_block {
+    padding-bottom: 1.88rem;
+    @include margin_tablet_horizontal;
+  }
+
+  .quote_block_text {
+    padding: 1.88rem;
+  }
+
+  .sponsor_block {
+    min-width: 16rem;
+    flex: 1;
+  }
+
+  .sponsor_blocks_container {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
 }

@@ -32,8 +32,8 @@
 }
 
 @mixin margin_mobile_vertical {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: $tablet-margin_2;
+  margin-bottom: $tablet-margin_2;
 }
 
 @mixin h3_caps {
@@ -83,3 +83,11 @@
   line-height: normal;
 }
 
+@mixin margin_tablet_horizontal {
+  margin-left: 3.75rem;
+  margin-right: 3.75rem;
+}
+
+$tablet-margin: 3.75rem;
+
+$tablet-margin_2: 1.88rem;
