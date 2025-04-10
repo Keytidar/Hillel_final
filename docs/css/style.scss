@@ -36,7 +36,7 @@ body {
   background-image: url(../images/svg/symbol_h.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 }
 
 .blue_bg {
@@ -126,6 +126,7 @@ body {
 .button_scroll button {
   background-color: transparent;
 }
+ 
 
 .scroll_container {
   display: flex;
@@ -154,7 +155,6 @@ body {
 
 .h2_mobile {
   @include h2_mobile;
-  @include margin_mobile_horizontal;
   @include margin_mobile_vertical;
   color: $basic_white;
 }
@@ -166,7 +166,6 @@ body {
 }
 
 .paragraph_introduction {
-  @include margin_mobile_horizontal;
   @include margin_mobile_vertical;
   font-family: $font_family_primary;
   font-size: 19px;
@@ -179,20 +178,17 @@ body {
 .cap {
   @include center-flex;
   @include h3_caps;
-  @include margin_mobile_horizontal;
   @include margin_mobile_vertical;
   color: $light_blue_regular;
   margin-bottom: 10px;
 }
 
 .hero_header {
-  @include margin_mobile_horizontal;
   @include hero_mobile;
   margin-bottom: 30px;
 }
 
 .icon_wrapper {
-  @include margin_mobile_horizontal;
   @include margin_mobile_vertical;
 }
 
@@ -208,7 +204,6 @@ body {
 
 .p_regular {
   @include p_regular;
-  @include margin_mobile_horizontal;
   margin-bottom: 30px;
 }
 
@@ -280,7 +275,7 @@ body {
 }
 
 .sponsor_block_container {
-  margin-bottom: 30px;;
+  margin-bottom: 30px;
 }
 
 .sponsor_block {
@@ -351,7 +346,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  @include margin_mobile_horizontal;
 }
 
 .publication_text {
@@ -369,7 +363,6 @@ body {
 
 footer {
   @include margin_mobile_vertical;
-  @include margin_mobile_horizontal;
 }
 
 .footer_cube {
@@ -403,4 +396,20 @@ footer {
 
 .blue_text {
   color: $blue_regular;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .services_container {
+    display: flex;
+    flex-wrap: wrap;;
+  }
+
+  .services_element {
+    min-width: none;
+    max-width: 18rem;
+  }
+}
+
+.margin_container {
+  @include margin_mobile_horizontal;
 }
