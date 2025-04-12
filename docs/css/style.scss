@@ -1,7 +1,5 @@
 @import "../scss/colors.scss";
-
 @import "../scss/fonts.scss";
-
 @import "../scss/mixins.scss";
 
 * {
@@ -20,15 +18,14 @@ a {
   line-height: normal;
   color: $light_blue_regular;
   cursor: pointer;
-  border-bottom: transparent 1px solid;;
+  border-bottom: transparent 1px solid;
 }
 
 a:hover {
   border-bottom: 1px solid $light_blue_regular;
 }
 
-
-body {  
+body {
   background: url;
 }
 
@@ -53,22 +50,35 @@ body {
 .languages_header {
   display: flex;
   padding: 10px 15px;
-  background-color: rgba($grey_bg, 0.2);
+  background-color: transparent;
 }
 
 .language_button_block {
   display: inline-block;
 }
 
+.services_element {
+  min-width: auto;
+  max-width: 30.83rem;
+  height: auto;
+}
+
 .tablet_header {
   display: flex;
 }
-
 
 .language_button {
   padding: 5px 7px;
   background-color: rgba(255, 255, 255, 0);
   color: $basic_white;
+}
+
+.services_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $tablet-margin;
+  justify-content: center;
+  
 }
 
 .language_button.active {
@@ -77,7 +87,7 @@ body {
 }
 
 .header_phone_number {
-  @include center-flex ;
+  @include center-flex;
   margin-left: auto;
   margin-right: 15px;
   color: var(--Basic-White, #FFF);
@@ -86,28 +96,27 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  }
+}
 
-  .wrapper_header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: $tablet-margin_2;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 129px;
-    position: relative;
-    
-  }
+.wrapper_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $tablet-margin_2;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 129px;
+  position: relative;
+}
 
-  .ico_header {
-    display: flex;
-    position: relative;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    gap: 4px;
-  }
+.ico_header {
+  display: flex;
+  position: relative;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  gap: 4px;
+}
 
 .hlegallaw {
   display: flex;
@@ -143,18 +152,22 @@ body {
   @include margin_tablet_horizontal;
   color: $basic_white;
 }
- 
+
 .button_scroll {
   display: flex;
   justify-content: center;
   margin-top: 10rem;
-  padding-bottom: 30px;;
+  padding-bottom: 30px;
 }
 
 .button_scroll button {
   background-color: transparent;
 }
- 
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
 .scroll_container {
   display: flex;
@@ -249,9 +262,7 @@ body {
   background-color: #E7E7F2;
 }
 
-
 .glasses_guy {
-  max-width: 100%;
   background-size: cover;
 }
 
@@ -270,12 +281,20 @@ body {
 }
 
 .quote_block {
+  display: flex;
   padding: 30px;
   background-color: $grey_bg;
 }
 
+.img_container {
+  height: 100%;
+  width: 25rem;
+}
+
 .quote_block img {
-  padding-bottom: 30px;;
+  padding-bottom: 30px;
+  width: 25rem;
+  height: auto; 
 }
 
 .hero_regular.quote {
@@ -294,7 +313,7 @@ body {
   background-color: transparent;
 }
 
-.dot_svg.active svg{
+.dot_svg.active svg {
   opacity: 1 !important;
 }
 
@@ -304,15 +323,21 @@ body {
   color: $blue_regular;
 }
 
-.sponsor_block_container {
-  margin-bottom: 30px;
-}
 
 .sponsor_block {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 7.5rem;
+  min-width: 16rem;
+  flex: 1;
+}
+
+
+
+.sponsor_blocks_container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 // sponsor colors section
@@ -336,6 +361,7 @@ body {
 .adtelligent_color {
   background-color: #E2E2E4;
 }
+
 .clickky_color {
   background-color: #C71C36; // Corrected color for Clickky
 }
@@ -368,11 +394,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: $tablet-margin_2;
+  background-color: $grey_bg;
 }
 
 .publication_block {
   max-width: 19rem;
   max-height: 32rem;
+  background-color: $basic_white;;
 }
 
 .publications h3 {
@@ -384,7 +412,6 @@ body {
   border-radius: 8px 8px 0px 0px;
   width: 100%;
   height: auto;
-  
 }
 
 .publication_cards {
@@ -397,7 +424,7 @@ body {
 
 .h4_regular {
   @include h4_regular;
-  color: $light_blue_regular; 
+  color: $light_blue_regular;
 }
 
 .publication_date {
@@ -418,8 +445,7 @@ body {
 
 .publication_text {
   padding-top: 15px;
-  border-top: 4px solid $grey_separator;;
-
+  border-top: 4px solid $grey_separator;
 }
 
 .p_small {
@@ -438,7 +464,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding-top: 30px;;
+  padding-top: 30px;
   border-top: 2px solid $grey_separator;
 }
 
@@ -466,7 +492,6 @@ footer {
   color: $blue_regular;
 }
 
-
 .margin_container {
   @include margin_mobile_horizontal;
 }
@@ -486,25 +511,42 @@ footer {
   .tablet_header :not(.header_phone_number) {
     display: none;
   }
+
   .language_button_block {
     margin-right: auto;
   }
+
   .menu_list {
     display: none;
   }
-}
-// Tablet
 
-@media (min-width: 601px) and (max-width: 1024px) {
-  .services_container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $tablet-margin;
+  .languages_header {
+    background-color: rgba($grey_bg, 0.2);
   }
+
+  .sponsor_blocks_container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .sponsor_block {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+     
+  }
+}
+
+// Tablet
+@media (min-width: 601px) and (max-width: 1024px) {
 
   .blue_bg {
     padding-bottom: $tablet-margin;
   }
+
   .margin_container {
     @include margin_tablet_horizontal;
   }
@@ -513,7 +555,6 @@ footer {
     min-width: none;
     max-width: 18rem;
   }
-
   .quote_block {
     padding-bottom: 1.88rem;
     @include margin_tablet_horizontal;
@@ -531,8 +572,9 @@ footer {
   .sponsor_blocks_container {
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
   }
+  
 
   .publications {
     @include margin_tablet_horizontal;
@@ -583,10 +625,44 @@ footer {
     min-height: 3.75rem;
   }
 
-
   .wrapper_header {
     margin-left: 0px;
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+// Tablet HD
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .scroll_container {
+    flex-direction: column;
+  }
+
+  .h2_mobile.border {
+    border-top: none;
+  }
+
+  .content_wrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .scroll_container {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .intro {
+    padding-left: 3.75rem;
+    border-left: 4px solid rgba($grey_separator, 0.3);
+  }
+
+  .publication_block {
+    max-width: 17.58rem;
+    max-height: 34.75rem;
+  }
+
+  .services_element {
+    max-width: 16.33rem;
   }
 }
